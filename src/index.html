@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body class="pt-11 flex items-center justify-center h-screen">
+    <div class="calculadora bg-blue-950  w-96">
+        <input class="bg-sky-950 text-gray-50 font-bold w-96 pt-3 " type="text" id="pantalla" readonly>
+        <br>
+        <div class="grid grid-cols-4">
+            <input class="numbers bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="1" onclick="agregar('1')">
+            <input class="numbers bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="2" onclick="agregar('2')">
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="3" onclick="agregar('3')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="+" onclick="agregar('+')">
+    
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="4" onclick="agregar('4')">
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="5" onclick="agregar('5')">
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2"type="button" value="6" onclick="agregar('6')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="-" onclick="agregar('-')">
+  
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="7" onclick="agregar('7')">
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="8" onclick="agregar('8')">
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="9" onclick="agregar('9')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="*" onclick="agregar('*')">
+    
+            <input class="numbers  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="0" onclick="agregar('0')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="." onclick="agregar('.')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="/" onclick="agregar('/')">
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="=" onclick="calcular()">
+       
+            <input class="symbols  bg-blue-950 hover:bg-sky-700 text-gray-100 px-4 py-2" type="button" value="C" onclick="borrar()">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
